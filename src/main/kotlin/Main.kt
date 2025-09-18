@@ -34,7 +34,7 @@ fun main() {
 
     val quotes = doc.select(FIND_EXPRESSION)
     quotes.forEachIndexed { index, quote ->
-        println(" $index. " + quote.text())
+        println(" ${index + 1}. ${quote.text()}")
     }
 }
 
